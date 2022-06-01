@@ -1,0 +1,15 @@
+<div class="absolute right-5 md:right-10 top-10">
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="text-5xl">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button
+      mat-menu-item
+      *ngFor="let menu of menuOptions"
+      (click)="selectMenu(menu)"
+    >
+      <mat-icon>{{ menu.icon }}</mat-icon>
+      <span>{{ menu.title }}</span>
+    </button>
+  </mat-menu>
+</div>

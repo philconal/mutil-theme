@@ -1,0 +1,7 @@
+@import "src/styles/core/settings/_variables";
+@import "src/styles/core/tools/mixins/_media";
+@import "./settings/_variables";
+
+.top-bar {
+  background-color: var(--color-foreground);
+}
